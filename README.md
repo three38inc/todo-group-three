@@ -11,5 +11,5 @@ This is a example of todo application created by Anto Antony and Susheela.
 - Basic html
 - Creation of sidebar html & css
 
-### Anto Antony:
+#### Anto Antony:
 - Main content html & css
