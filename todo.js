@@ -36,3 +36,18 @@ ul.addEventListener( "click",function (p) {
   },
   false
 );
+
+function search_item() {
+  let input = document.getElementById('txt-search').value
+  input = input.toLowerCase();
+  let all_items = document.getElementsByClassName('nav-item');
+
+  for (i = 0; i < all_items.length; i++) {
+    if (!all_items[i].innerHTML.toLowerCase().includes(input)) {
+      all_items[i].style.display = "none";
+    }
+    else {
+      all_items[i].style.display = "list-item";
+    }
+  }
+}
