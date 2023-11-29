@@ -71,16 +71,17 @@ body {
   }
   .todo-search #txt-search {
     margin-top: 10px;
-    width: 190px;
+    width: 260px;
     height: 35px;
   }
-  .todo-input .btn-add, .btn-search {
+  .todo-input .btn-add {
     padding: 10px 10px;
     border-radius: 5px;
     border: none;
     background-color:coral;
     color: white;
     font-weight: 600;
+    cursor: pointer;
   }
   .btn-add .btn{
    
@@ -155,6 +156,8 @@ body {
     font-weight:regular;
     width: 250px;
     cursor:pointer;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #ffea92;
   }
 
   
