@@ -114,6 +114,7 @@ body {
   .check-li{
     background-color: rgb(255, 255, 187);
     border-radius: 10px;
+    color: #AAA;
   }
   
   ul li p .checked{
@@ -151,6 +152,7 @@ body {
 		margin:0;
   }
   .navbar .items .sidenav .nav-item{
+    display: flex;
     padding:0.5em 1em 0.5em 1em;
     font-size:0.95em;
     font-weight:regular;
@@ -158,6 +160,10 @@ body {
     cursor:pointer;
     background-color: rgb(255, 255, 255);
     border: solid 1px #ffea92;
+  }
+  .task-icons {
+    display: flex;
+    column-gap: 5px;
   }
 
   

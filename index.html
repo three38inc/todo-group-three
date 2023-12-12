@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
@@ -27,23 +28,14 @@
                             <input type="text" placeholder="Search" id="txt-search" onkeyup="search_item()"/>
                             <!-- <button class="btn-search" onclick="search_item()">Search</button> -->
                         </div>
-                        <div class="items">
+                        <div class="items toComplete" id="tasks">
                             <ul class="sidenav" id="navAccordion">
-                                <li class="nav-item">
-                                    <span>Shopping</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Gym</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Make Bed</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Cook</span>
-                                </li>
-                                <li class="nav-item">
-                                    <span>Study</span>
-                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="items completed">
+                            <ul class="sidenavBlur" id="navAccordion-completed">
+                                
                             </ul>
                         </div>
                 </nav>
@@ -51,11 +43,19 @@
         </div>
         <div class="mainpage">
             <div class="todo-container">
-                <img src="./img/20286010_6208578.svg" class="vector" alt="">
-                <h2> Todo Task </h2>
+                <div class="title">
+                    <h2>Today</h2>
+                    <div class="date" id="date">Wednesday, October 11</div>
+                    <div class="time" id="time">11:11:00 AM</div>
+                </div>
+                <div class="image">
+                    <img src="./img/20286010_6208578.svg" class="vector" alt="">
+                    <h2> Todo Task </h2>
+                </div>
                 <div class="todo-input">
                     <input type="text" placeholder="Write something here!" id="txt-input" />
-                    <button class="btn-add" onclick="add()">Add</button>
+                    <!-- <button class="btn-add" onclick="add()">Add</button> -->
+                    <button class="btn-add" id="addTask">Add</button>
                     <div class="todo-content">
                         <ul class="add-list">
 
@@ -66,7 +66,11 @@
             </div>
         </div>
     </div>
+    <script src="./scripts/Clock.js"></script>
+    <script src="./scripts/Task.js"></script>
+    <script src="./scripts/main.js"></script>
     <script src="./todo.js"></script>
+
 </body>
 
 </html>
